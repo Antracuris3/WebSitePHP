@@ -1,0 +1,45 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1{
+  font-size: 40px;
+  color:#4C77D4;
+  font-style: oblique;
+  font-weight: bold;
+
+}
+
+h2{
+  font-size: 30px;
+  color:#4C77D4;
+  font-style: arial;
+}
+
+h3{
+  font-size: 25px;
+  color:#75A1FF;
+  text-decoration: underline;
+  font-style: arial;
+
+}
+
+p{
+  font-size: 20px;
+  color:#75A1FF;
+}
+
+li{
+  font-size: 15px;
+  color:#75A1FF;
+}
+
+@media only screen and (max-width: 600px) {
+
+embed{
+  width: 460px;
+  height: 300px;
+}
+
+}

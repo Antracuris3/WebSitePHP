@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>top</title>
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="icon" href="Imagens/icon.ico">
+	</head>
+<body background="Wallpapers/regwallpaper.jpg">
+</body>
+<body>
+
+	<ul>
+		<li> <a href="formulario.html" target="bottom"> Formulário </a> </li>
+		<li> <a href="basicos.html" target="bottom"> Básicos do jogo </a> </li>
+		<li> <a href="Champions.html" target="bottom"> Champions </a> </li>
+		<li> <a href="bottom.html" target="bottom"> Streamers&Youtubers </a> </li>
+	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<center><h1> Bem vindo ao melhor site de informação sobre League of Legends </h1> </center>
+	<p>
+	<center> <h2>Tá na hora de despachar para aprender. O tempo está a contar</h2> </center>
+	<p>
+
+<center> <audio controls src="Audio/music.mp3"> </center>
+	<center>	<script>
+		function startTime() {
+		    var today = new Date();
+		    var h = today.getHours();
+		    var m = today.getMinutes();
+		    var s = today.getSeconds();
+		    m = checkTime(m);
+		    s = checkTime(s);
+		    document.getElementById('txt').innerHTML =
+		    h + ":" + m + ":" + s;
+		    var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+		    if (i < 10) {i = "0" + i};
+		    return i;
+		}
+		</script>
+		<body onload="startTime()">
+
+		<div id="txt"></div>
+
+	</body> </center>
+
+</body>
+
+</html>

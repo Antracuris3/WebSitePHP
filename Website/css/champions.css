@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.presente {
+  opacity: 1;
+}
+
+.slide .conteudo {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .conteudo h1 {
+  margin-bottom: 10px;
+}
+
+.slide.presente .conteudo {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#avancar {
+  position: absolute;
+  top: 40%;
+  right: 15px;
+}
+
+.buttons button#recuar {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.presente .conteudo {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+
+
+.slide:first-child {
+  background: url('https://images2.alphacoders.com/661/thumb-1920-661780.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(2) {
+  background: url('https://wallpaperplay.com/walls/full/b/8/0/169017.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(3) {
+  background: url('https://www.ecopetit.cat/wpic/mpic/92-923824_yasuo-nightbringer.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(4) {
+  background: url('https://images7.alphacoders.com/874/thumb-1920-874347.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('https://www.imgbase.info/images/safe-wallpapers/video_games/league_of_legends/53235-arclight_vayne_wallpaper.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(6)  {
+  background: url('http://getwallpapers.com/wallpaper/full/b/2/a/634456.jpg') no-repeat
+    center center/cover;
+}
